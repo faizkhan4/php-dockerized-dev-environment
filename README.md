@@ -5,7 +5,7 @@
 [![Laravel](https://img.shields.io/badge/Laravel-9.x-FF2D20?logo=laravel)](https://laravel.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-A **fully containerized PHP/Laravel + Node.js development environment** with Redis, MySQL, and Nginx — built for developers who want **speed, reproducibility, and zero setup headaches**.  
+A **fully containerized PHP/Laravel + Node.js development environment** with Redis, MySQL, and Nginx — built for developers who want **speed, reproducibility, and zero setup headaches**.
 
 This repository goes beyond the basics by providing:
 - Separate **dev** and **CI** Docker Compose configurations
@@ -139,14 +139,14 @@ REDIS_HOST=redis
 ```mermaid
 graph LR
     subgraph Client
-    Browser
+        Browser
     end
 
     subgraph Docker
-    App[App Container (Nginx+PHP+Composer)]
-    Node[Node Container (Node.js+NPM+Gulp)]
-    MySQL[(MySQL DB)]
-    Redis[(Redis Cache)]
+        App["App Container (Nginx PHP Composer)"]
+        Node["Node Container (Node.js NPM Gulp)"]
+        MySQL[(MySQL DB)]
+        Redis[(Redis Cache)]
     end
 
     Browser -->|HTTP Requests| App
@@ -169,5 +169,5 @@ This project is licensed under the MIT License.
 
 ---
 
-💡 **Pro Tip:**  
+💡 **Pro Tip:**
 Use this setup as a **template** for any PHP/Laravel + Node.js stack you build in the future. It’s designed to scale from local development to CI pipelines without extra config hassle.
